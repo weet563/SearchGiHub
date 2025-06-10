@@ -6,9 +6,74 @@
 
     <link rel="stylesheet" href="dist/styles/main.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+
     <title>Search GitHub | WesleyCords</title>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>GitHub Procurador de Perfis</h1>
+
+        <div class="search-box">
+            <input id="username" type="text" placeholder="Digite o Username do GitHub...">
+            <button id="btn-search" type="button" class="button"><i class='bx  bx-search'></i> Buscar</button>
+        </div>
+
+        <div id="error" class="mensager-error">
+            <p>Usuario Não Encontrado, Tente Novamente!</p>
+        </div>
+
+        <main>
+            <div id="profile" class="profile">
+
+                <div class="profile-info">
+                    <img id="avatar" class="profile-info-avatar" src="https://placehold.co/100x100">
+                    <div class="profile-info-dados">
+                        <h2 id="name">@Namekjsdvdssdfdss</h2>
+                        <p id="user">@username</p>
+                        <p id="location">
+                            <i class='bx  bx-location'></i>
+                        </p>
+                        <p id="twitter">
+                            <i class='bx  bx-community'></i> 
+                            @twitter</p>
+                    </div>
+                </div>
+
+                <div class="profile-bio">
+                    <p id="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, fugit suscipit! Reprehenderit expedita saepe ea velit, iste laborum nihil omnis recusandae tempore facilis quidem aperiam nobis aut facere harum at.</p>
+                </div>
+
+                <div class="profile-stats">
+                    <div class="profile-stats-stat">
+                        <h3 id="repo">12</h3>
+                        <p>Repositórios</p>
+                    </div>
+                    <div class="profile-stats-stat">
+                        <h3 id="followers">12</h3>
+                        <p>Seguidores</p>
+                    </div>
+                    <div class="profile-stats-stat">
+                        <h3 id="following">12</h3>
+                        <p>Seguindo</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="repos">
+                <h2>Repositórios Recentes</h2>
+
+                <div id="repos-list" class="repo-list">
+                    <!-- Conteúdo adicionado com JavaScript -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="src/scripts/main.js"></script>
 </body>
 </html>

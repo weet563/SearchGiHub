@@ -1,3 +1,30 @@
-body {
-    background-color: yellow;
+@use 'componentes/reset';
+@use 'componentes/buttons';
+@use 'componentes/input';
+@use 'componentes/icons';
+@use 'secoes/profile';
+@use 'secoes/repos';
+@use 'secoes/msg_error';
+
+html {
+    background-color: #ebedf0;
+    font-family: "Roboto", sans-serif;
 }
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 40px 30px;
+    background-color: #fafafa;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.5);
+    border-radius: 8px;
+
+    @media (max-width: 1024px) {
+        max-width: 90%;
+    }
+
+    @media (max-width: 640px) {
+        max-width: 80%;
+    }
+}
+

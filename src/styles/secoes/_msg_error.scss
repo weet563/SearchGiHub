@@ -1,0 +1,17 @@
+.mensager-error {
+    display: none;
+    color: red;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 0;
+
+    &-repo {
+        display: block;
+        color: red;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        margin: 30px 0;
+    }
+}
