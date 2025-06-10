@@ -193,7 +193,7 @@ h1 {
 
 html {
   background-color: #ebedf0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -213,6 +213,14 @@ html {
 @media (max-width: 640px) {
   .container {
     max-width: 80%;
+  }
+}
+
+@media (max-width: 640px) {
+  .text-mobile {
+    font-size: 1.5rem;
+    white-space: nowrap;
+    display: block;
   }
 }
 

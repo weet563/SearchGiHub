@@ -8,15 +8,17 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
     <title>Search GitHub | WesleyCords</title>
 </head>
 <body>
     <div class="container">
-        <h1>GitHub Procurador de Perfis</h1>
+        <h1>GitHub <span class="text-mobile">Procurador de Perfis</span></h1>
 
         <div class="search-box">
             <input id="username" type="text" placeholder="Digite o Username do GitHub...">
@@ -33,32 +35,32 @@
                 <div class="profile-info">
                     <img id="avatar" class="profile-info-avatar" src="https://placehold.co/100x100">
                     <div class="profile-info-dados">
-                        <h2 id="name">@Namekjsdvdssdfdss</h2>
-                        <p id="user">@username</p>
+                        <h2 id="name"></h2>
+                        <p id="user"></p>
                         <p id="location">
                             <i class='bx  bx-location'></i>
                         </p>
                         <p id="twitter">
                             <i class='bx  bx-community'></i> 
-                            @twitter</p>
+                            </p>
                     </div>
                 </div>
 
                 <div class="profile-bio">
-                    <p id="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, fugit suscipit! Reprehenderit expedita saepe ea velit, iste laborum nihil omnis recusandae tempore facilis quidem aperiam nobis aut facere harum at.</p>
+                    <p id="bio"></p>
                 </div>
 
                 <div class="profile-stats">
                     <div class="profile-stats-stat">
-                        <h3 id="repo">12</h3>
+                        <h3 id="repo">0</h3>
                         <p>Repositórios</p>
                     </div>
                     <div class="profile-stats-stat">
-                        <h3 id="followers">12</h3>
+                        <h3 id="followers">0</h3>
                         <p>Seguidores</p>
                     </div>
                     <div class="profile-stats-stat">
-                        <h3 id="following">12</h3>
+                        <h3 id="following">0</h3>
                         <p>Seguindo</p>
                     </div>
                 </div>
@@ -72,6 +74,17 @@
                 </div>
             </div>
         </main>
+        <footer class="footer">
+            <h4 style="text-align: center; margin: 10px;">Conecte-nos e Vamos Seguir Juntos!</h4>
+            <div class="footer-icons">
+                <a href="#"><i class="bi bi-github"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+            <p class="footer-creds">
+                &copy By WesleyCords - Todos os direitos reservados.
+            </p>
+        </footer>
     </div>
 
     <script src="src/scripts/main.js"></script>

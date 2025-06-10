@@ -1,0 +1,29 @@
+.footer {
+    padding: 20px 0 10px 0;
+    border-top: 2px solid #ccc;
+    margin-top: 30px;
+
+    &-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+
+        a {
+            text-decoration: none;
+            color: black;
+
+            &:hover {
+                transform: scale(1.03);
+            }
+        }
+
+        i {
+            font-size: 24px;
+        }
+    }
+
+    &-creds {
+        text-align: center;
+    }
+}
